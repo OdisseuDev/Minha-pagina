@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesca no DF</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>🎣 Pesca no DF</h1>
+    <p>Conheça locais para pescar no Distrito Federal e entorno e faça uma reserva.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Locais</h2>
+      <button id="btnLocais">Mostrar locais</button>
+      <div id="listaLocais" class="escondido"></div>
+    </section>
+
+    <section>
+      <h2>Reservar</h2>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" placeholder="Seu nome">
+
+      <label for="local">Local</label>
+      <select id="local"></select>
+
+      <label for="pessoas">Número de pessoas (1 a 10)</label>
+      <input type="text" id="pessoas" placeholder="Ex.: 3">
+
+      <button id="btnReservar">Reservar</button>
+      <p id="mensagem"></p>
+    </section>
+
+    <section>
+      <h2>Última reserva</h2>
+      <p id="ultima">Nenhuma reserva ainda.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto de estudo. A reserva é uma simulação e não garante vaga em nenhum local.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
